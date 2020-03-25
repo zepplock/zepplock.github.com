@@ -33,7 +33,7 @@ const LandingBio = () => (
         site {
           siteMetadata {
             title
-            subtitle
+            subTitle
           }
         }
       }
@@ -56,7 +56,7 @@ NameHeader.propTypes = {
 
 NameHeader.defaultProps = {
   siteTitle: ``,
-  subtitle: ``,
+  subTitle: ``,
 }
 
 export default LandingBio

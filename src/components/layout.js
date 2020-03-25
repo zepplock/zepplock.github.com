@@ -36,18 +36,19 @@ const Layout = ({ children }) => (
         site {
           siteMetadata {
             title
+            subTitle
           }
         }
       }
     `}
     render={data => (
       <>
-        <Header siteTitle={data.site.siteMetadata.title} />
         <Content>
+          <Header siteTitle={data.site.siteMetadata.title} siteSubTitle={data.site.siteMetadata.subTitle} />
           <main>{children}</main>
           <Footer>
             <p>
-            © {new Date().getFullYear()}, Built with
+              © {new Date().getFullYear()}, Built with
             {` `}
             </p>
             <GatsbyLink href="https://www.gatsbyjs.org">Gatsby</GatsbyLink>

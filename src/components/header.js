@@ -37,29 +37,34 @@ const HomeLink = styled(NavLink)`
   font-size: 1.2rem;
   margin-right: 20px;
 `
+
+const SubHeader = styled.div`
+  font-size: 0.9rem;
+  font-style: italic;
+`
 const SiteHeader = styled.header`
   background: transparent;
   display: flex;
-  align-content: center;
-  justify-content: center;
+  align-content: left;
+  justify-content: left;
 `
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle, siteSubTitle }) => (
   <SiteHeader>
     <Content>
-      <p>
-        <HomeLink to="/">{siteTitle}</HomeLink>
-        [ <NavLink to="/about">About</NavLink> ]
-      </p>
+      <HomeLink to="/">{siteTitle}</HomeLink>
+      <SubHeader>{siteSubTitle}</SubHeader>
     </Content>
   </SiteHeader>
 )
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
+  siteSubTitle: PropTypes.string,
 }
 
 Header.defaultProps = {
   siteTitle: ``,
+  siteSubTitle: ``,
 }
 
 export default Header
