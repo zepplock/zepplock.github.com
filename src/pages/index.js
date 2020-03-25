@@ -17,14 +17,21 @@ const ArticleDate = styled.h5`
   color: #606060;
 `
 
-const MarkerHeader = styled.h3`
+const Article = styled.div`
+  padding: 10px;
+  &:hover {
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.2);
+  }
+`
+
+const MarkerHeader = styled.h4`
   display: inline;
   border-radius: 1em 0 1em 0;
   background-image: linear-gradient(
     -100deg,
-    rgba(255, 250, 150, 0.15),
-    rgba(255, 250, 150, 0.8) 100%,
-    rgba(255, 250, 150, 0.25)
+    rgba(240, 243, 189, 0.15),
+    rgba(240, 243, 189, 0.8) 100%,
+    rgba(240, 243, 189, 0.25)
   );
 `
 
@@ -38,7 +45,7 @@ const IndexPage = ({ data }) => {
     <Layout>
       <SEO title="Blog" />
       <Content>
-        <h1>Articles</h1>
+        <h2>Articles</h2>
         {data.allMarkdownRemark.edges
           .filter(({ node }) => {
             const rawDate = node.frontmatter.rawDate
@@ -46,7 +53,7 @@ const IndexPage = ({ data }) => {
             return date < new Date()
           })
           .map(({ node }) => (
-            <div key={node.id}>
+            <Article key={node.id}>
               <Link
                 to={node.frontmatter.path}
                 css={css`
@@ -61,7 +68,7 @@ const IndexPage = ({ data }) => {
                 </div>
                 <p>{node.excerpt}</p>
               </Link>
-            </div>
+            </Article>
           ))}
       </Content>
     </Layout>

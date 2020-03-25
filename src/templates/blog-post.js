@@ -10,18 +10,18 @@ const Content = styled.div`
   padding: 1.45rem 1.0875rem;
 `
 
-const MarkedHeader = styled.h1`
+const MarkedHeader = styled.h2`
   display: inline;
   border-radius: 1em 0 1em 0;
   background-image: linear-gradient(
     -100deg,
-    rgba(255, 250, 150, 0.15),
-    rgba(255, 250, 150, 0.8) 100%,
-    rgba(255, 250, 150, 0.25)
+    rgba(240, 243, 189, 0.15),
+    rgba(240, 243, 189, 0.8) 100%,
+    rgba(240, 243, 189, 0.25)
   );
 `
 
-const HeaderDate = styled.h3`
+const HeaderDate = styled.h5`
   margin-top: 10px;
   color: #606060;
 `
@@ -33,15 +33,15 @@ const MarkdownContent = styled.div`
     position: relative;
 
     background-image: linear-gradient(
-      rgba(255, 250, 150, 0.8),
-      rgba(255, 250, 150, 0.8)
+      rgba(2, 195, 154, 0.8),
+      rgba(2, 195, 154, 0.8)
     );
     background-repeat: no-repeat;
     background-size: 100% 0.2em;
     background-position: 0 88%;
     transition: background-size 0.25s ease-in;
     &:hover {
-      background-size: 100% 88%;
+      background-size: 100% 100%;
     }
   }
 `
