@@ -2,7 +2,7 @@
 title: "My Music Server"
 date: "2009-09-05"
 draft: false
-path: "/blog/my-music-server"
+path: "/articles/my-music-server"
 ---
 
 Some time ago I realized that using my home desktop (Dell XPS 710) with 1000w power supply as a music server is not a perfect solution. It was not perfect in many ways:

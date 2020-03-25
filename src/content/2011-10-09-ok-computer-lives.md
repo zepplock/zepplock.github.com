@@ -2,7 +2,7 @@
 title: "OK Computer Lives"
 date: "2011-10-09"
 draft: false
-path: "/blog/ok-computer-lives"
+path: "/articles/ok-computer-lives"
 ---
 
 I know the title of this post is a bit cryptic. It is not about computers at all. It is about Radiohead's album called "Ok Computer".
