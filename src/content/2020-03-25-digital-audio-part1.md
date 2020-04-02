@@ -22,7 +22,7 @@ What I will be discussing in these articles are topics around digital audio: arc
 
 Since these articles are not intended for people with a deep scientific background, I will use analogies a lot. Let's try one really quick:
 
-     Take a simple CD audio (per standard it is 16bit 44.1khz PCM). 
+     Take a simple CD audio (per standard it is 16/44 PCM). 
      It has lots of megabytes of audio data in it.
      Imagine every megabyte is a cotton ball and we have a handful of those balls.
      Now let's put it into a shoebox - that's our '.WAV' file.
@@ -71,13 +71,13 @@ The moral of Misconception #3 is that you can't compare streaming services by in
 
 #### Myth #3: HiRez audio always sounds better
 
-Let's imagine that some streaming service or online store decides to convert `source A` from `16/44.1` to `24/96`. They are calling it 'HiRez' music and selling it for more than a regular `16/44`. So what exactly happens? Let's do another analogy:
+Let's imagine that some streaming service or online store decides to convert `source A` from `16/44` to `24/96`. They are calling it 'HiRez' music and selling it for more than a regular `16/44`. So what exactly happens? Let's do another analogy:
 
     We have a shoebox full of cotton balls.
     They took it and put it into ~3x larger container - say a 5 lb bucket.
     Same amount of cotton, in a different container.
 
-We have the same music, same quality, same content but it takes longer to download and stream. More importantly, it sounds the same too!
+We have the same audio, same quality, same content but it takes longer to download and stream. More importantly, it sounds the same too!
 
 ## Further reading on this subject
 
