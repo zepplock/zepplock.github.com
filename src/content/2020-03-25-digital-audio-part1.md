@@ -1,5 +1,5 @@
 ---
-title: "Digital Streaming (part 1) "
+title: "Digital Audio (part 1) "
 date: "2020-03-25"
 draft: false
 path: "/articles/digital-audio-part1"
