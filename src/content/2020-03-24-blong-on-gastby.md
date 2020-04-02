@@ -1,5 +1,5 @@
 ---
-title: "This site is running on Gatsby.js"
+title: "This site is running on Gatsby"
 date: "2020-03-24"
 draft: false
 path: "/articles/blog-on-gatsby"
