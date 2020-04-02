@@ -69,7 +69,7 @@ If the music source was identical in each and every streaming service (let's tak
 
 The moral of Misconception #3 is that you can't compare streaming services by individual song quality. Consider other parameters as well. You should make your decision based on price, platform availability (PC, Mac, Android, iOS) and catalog size first and foremost.
 
-#### Myth #3: coax vs optical cables
+#### Myth #3: HiRez have to sound better
 
 Let's imagine that some streaming service or online store decides to convert `source A` from 16bit/44.1kHz to 24bit/96kHz (`24/96`). They are calling it 'HiRez' music and selling it for more than a regular `16/44`. So what exactly happens? Let's do another analogy:
 
@@ -77,7 +77,7 @@ Let's imagine that some streaming service or online store decides to convert `so
     They took it and put it into ~3x larger container - say a 5 lb bucket.
     Same amount of cotton, in a different container.
 
-We have the same music, same quality, same content but it takes more time to download and stream. More importantly, it sounds the same too!
+We have the same music, same quality, same content but it takes longer to download and stream. More importantly, it sounds the same too!
 
 ## Sources
 
