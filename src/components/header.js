@@ -3,6 +3,13 @@ import styled from "@emotion/styled"
 import PropTypes from "prop-types"
 import React from "react"
 
+const SiteHeader = styled.header`
+  background: transparent;
+  display: flex;
+  justify-content: left;
+  margin-right: 20px;
+`
+
 const Content = styled.div`
   max-width: 860px;
   padding: 1rem 1.0875rem;
@@ -42,18 +49,24 @@ const SubHeader = styled.div`
   font-size: 0.9rem;
   font-style: italic;
 `
-const SiteHeader = styled.header`
-  background: transparent;
-  display: flex;
-  align-content: left;
-  justify-content: left;
+
+const ExtraLink = styled.a`
+  font-size: 0.9rem;
+  float:right;
+  clear:both;
+  width: 50%;
+  text-align: right;
 `
+
 const Header = ({ siteTitle, siteSubTitle }) => (
   <SiteHeader>
+    
     <Content>
+    
       <HomeLink to="/">{siteTitle}</HomeLink>
       <SubHeader>{siteSubTitle}</SubHeader>
     </Content>
+    <ExtraLink href="/rss.xml">RSS</ExtraLink>
   </SiteHeader>
 )
 
