@@ -56,6 +56,7 @@ const ExtraLink = styled.a`
   clear:both;
   width: 50%;
   text-align: right;
+  padding: 1rem 1.0875rem;
 `
 
 const Header = ({ siteTitle, siteSubTitle }) => (
