@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Vlad's personal RSS Feed]]></title><description><![CDATA[Vlad's personal RSS Feed]]></description><link>http://vova.org</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 05 Apr 2020 23:10:52 GMT</lastBuildDate><item><title><![CDATA[Digital Audio (part 1) ]]></title><description><![CDATA["... Phase One, in which Doris gets her oats"
+-- "Two of Us" by The Beatles Preface This article is the first of many articles to cover…]]></description><link>http://vova.org/2020-03-25-digital-audio-part1/</link><guid isPermaLink="false">http://vova.org/2020-03-25-digital-audio-part1/</guid><pubDate>Wed, 25 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&quot;... Phase One, in which Doris gets her oats&quot;
+-- &lt;a href=&quot;https://simple.wikipedia.org/wiki/Two_of_Us_(The_Beatles_song)&quot;&gt;&quot;Two of Us&quot; by The Beatles&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3&gt;Preface&lt;/h3&gt;
+&lt;p&gt;This article is the first of many articles to cover digital audio. I express my personal views and I&apos;m not affiliated with any manufacturer, reviewer or organization.&lt;/p&gt;
+&lt;h3&gt;Goal&lt;/h3&gt;
+&lt;p&gt;What I will be discussing in these articles are topics around digital audio: archiving, storage, playback, audio players, streaming and all kinds of digital audio equipment. I&apos;ll try to explain how audio lives in a digital world, all the way from where audio becomes digital (typically in a studio) to a digital to analog converter (DAC) in your home audio system. So I will skip the effects of any analog equipment such as speakers, amplifiers, tubes, etc.&lt;/p&gt;
+&lt;h3&gt;What is lossless? Analogy #1&lt;/h3&gt;
+&lt;p&gt;Since these articles are not intended for people with a deep scientific background, I will use analogies a lot. Let&apos;s try one really quick:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-text line-numbers&quot;&gt;&lt;code class=&quot;language-text&quot;&gt; Take a simple CD audio (per standard it is 16/44 PCM). 
+ It has lots of megabytes of audio data in it.
+ Imagine every megabyte is a cotton ball and we have a handful of those balls.
+ Now let&amp;#39;s put it into a shoebox - that&amp;#39;s our &amp;#39;.WAV&amp;#39; file.
+ If we stuff all cotton balls into an Altoids box - we get a &amp;#39;.FLAC&amp;#39; file.&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The moral of this analogy is that packing and unpacking cotton balls into 2 different boxes does not change the weight of cotton balls. This process does not remove any, nor adds anything extra. What FLAC does really well is packing and unpacking fluffy cotton since it has a lot of air in-between cotton fibers. In fact, FLAC can do it as many times as you want, so you can do &lt;code class=&quot;language-text&quot;&gt;WAV-&amp;gt;FLAC-&amp;gt;WAV&lt;/code&gt; encoding/decoding without altering audio data. This type of codec is called &lt;strong&gt;Lossless&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3&gt;The Sources&lt;/h3&gt;
+&lt;p&gt;Going forward, let&apos;s identify a few sound sources of musical content.&lt;/p&gt;
+&lt;h4&gt;Source A&lt;/h4&gt;
+&lt;p&gt;The first one (we will call it &lt;code class=&quot;language-text&quot;&gt;source A&lt;/code&gt;) is a single track from a good old-fashioned Audio CD in 16bit 44.1kHz PCM (we will call it &lt;code class=&quot;language-text&quot;&gt;16/44&lt;/code&gt;). This is a well-recorded piece of music from, let&apos;s say, the 70s. Originally recorded to an analog master tape and later digitized for CD distribution. We don&apos;t really care how or when digital conversion happened.&lt;/p&gt;
+&lt;h4&gt;Source B&lt;/h4&gt;
+&lt;p&gt;The next one (we will call it &lt;code class=&quot;language-text&quot;&gt;source B&lt;/code&gt;) is a state of the art modern recording, recorded directly to digital media in 24bit and 96kHz (&lt;code class=&quot;language-text&quot;&gt;24/96&lt;/code&gt;).&lt;/p&gt;
+&lt;h3&gt;Digital Audio Myths&lt;/h3&gt;
+&lt;h4&gt;Myth #1: coax vs optical cables&lt;/h4&gt;
+&lt;p&gt;I read a post on Facebook recently where a person was claiming that switching his home internet connection from coax (Comcast) to optical (AT&amp;#x26;T) improved &apos;high frequencies, made low end tighter` and so on.&lt;/p&gt;
+&lt;p&gt;Of course, different internet providers can have different quality of service. In fact, with adaptive streaming, low-quality internet will affect the quality of video and sound. But optical and coax cables are not the culprit here. The changes in characteristics of sound mentioned by this person (high/low frequencies roll of) most likely can be attributed to a streaming service he was using downgrading his stream to avoid skipping. Here&apos;s a fitting analogy:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-text line-numbers&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;You open your email on your PC computer (coax Comcast connection).
+You open the same email on your iPhone (AT&amp;amp;T wireless).
+You go to your neighbor, open your email on his computer (dialup twisted pair).
+All messages were the same.&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;It might take longer to load, but don&apos;t expect to hear sound differences in a your provider&apos;s cable.&lt;/p&gt;
+&lt;h4&gt;Myth #2: One lossless streaming service sounds better than the other&lt;/h4&gt;
+&lt;p&gt;This one is tricky because so many people go to (for example, Tidal) and find music they stream from other places before, compare it and claim they hear a difference. Interestingly enough, they turn out to be right, many tracks do sound different, but why? How can the same audio sound differently? Let&apos;s try to find out potential causes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It&apos;s actually different audio: just because one track is titled &lt;em&gt;Pink Floyd - Wish You Were Here&lt;/em&gt; on both services does not automatically mean it&apos;s the same digital audio. I have about &lt;strong&gt;eight&lt;/strong&gt; different versions of this track and they all sound slightly different. Think about all remixes, remasters and vinyl needle drops that exist.&lt;/li&gt;
+&lt;li&gt;One audio player is incorrectly configured: this is pretty common, actually. Some audio players do a better job by ensuring digital data is reproduced bit-perfect. It greatly depends on a computer&apos;s operating system, portable player and DAC drivers. There are good players on every platform, but there are bad ones too.&lt;/li&gt;
+&lt;li&gt;Streaming providers cheat: it was shown that even a 1db increase in loudness can be perceived by the human brain as better. So hypothetically they could take &lt;code class=&quot;language-text&quot;&gt;16/44&lt;/code&gt; source, make it a bit louder, convert to &lt;code class=&quot;language-text&quot;&gt;24/96&lt;/code&gt; and sell as &apos;HiRez&apos;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If the music source was identical in each and every streaming service (let&apos;s take our &lt;code class=&quot;language-text&quot;&gt;source B&lt;/code&gt;) then they would all sound identical. Neither internet connection, type of cable to your house, USB cable, DAC, player nor any other path of a digital chain can change the sound.&lt;/p&gt;
+&lt;p&gt;The moral of Misconception #3 is that you can&apos;t compare streaming services by individual song quality. Consider other parameters as well. You should make your decision based on price, platform availability (PC, Mac, Android, iOS) and catalog size first and foremost.&lt;/p&gt;
+&lt;h4&gt;Myth #3: HiRez audio always sounds better&lt;/h4&gt;
+&lt;p&gt;Let&apos;s imagine that some streaming service or online store decides to convert &lt;code class=&quot;language-text&quot;&gt;source A&lt;/code&gt; from &lt;code class=&quot;language-text&quot;&gt;16/44&lt;/code&gt; to &lt;code class=&quot;language-text&quot;&gt;24/96&lt;/code&gt;. They are calling it &apos;HiRez&apos; music and selling it for more than a regular &lt;code class=&quot;language-text&quot;&gt;16/44&lt;/code&gt;. So what exactly happens? Let&apos;s do another analogy:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-text line-numbers&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;We have a shoebox full of cotton balls.
+They took it and put it into ~3x larger container - say a 5 lb bucket.
+Same amount of cotton, in a different container.&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;We have the same audio, same quality, same content but it takes longer to download and stream. More importantly, it sounds the same too!&lt;/p&gt;
+&lt;h2&gt;Further reading on this subject&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Audio_bit_depth&quot;&gt;Audio bit depth on Wikipedia&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[This site is running on Gatsby]]></title><description><![CDATA["The car is on fire and there's nobody at the wheel"
+-- Godspeed You! Black Emperor A very fitting quote for being stuck at home. Redesigned…]]></description><link>http://vova.org/2020-03-24-blong-on-gastby/</link><guid isPermaLink="false">http://vova.org/2020-03-24-blong-on-gastby/</guid><pubDate>Tue, 24 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&quot;The car is on fire and there&apos;s nobody at the wheel&quot;
+-- &lt;a href=&quot;https://genius.com/artists/Godspeed-you-black-emperor&quot;&gt;Godspeed You! Black Emperor&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;A very fitting quote for being stuck at home.&lt;/p&gt;
+&lt;p&gt;Redesigned this blog and will post some audio related content.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[OK Computer Lives]]></title><description><![CDATA[I know the title of this post is a bit cryptic. It is not about computers at all. It is about Radiohead's album called "Ok Computer". I have…]]></description><link>http://vova.org/2011-10-09-ok-computer-lives/</link><guid isPermaLink="false">http://vova.org/2011-10-09-ok-computer-lives/</guid><pubDate>Sun, 09 Oct 2011 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I know the title of this post is a bit cryptic. It is not about computers at all. It is about Radiohead&apos;s album called &quot;Ok Computer&quot;.&lt;/p&gt;
+&lt;p&gt;I have always been a big fan of &lt;a href=&quot;http://RADIOHEAD.COM&quot;&gt;Radiohead&lt;/a&gt; and coming back to &quot;Ok Computer&quot; is like meeting a good friend. Just listen to this:&lt;/p&gt;
+&lt;center&gt;
+  &lt;iframe width=&quot;400&quot; height=&quot;300&quot; src=&quot;//www.youtube.com/embed/rF8khJ7P4Wg&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+  &lt;iframe width=&quot;400&quot; height=&quot;300&quot; src=&quot;//www.youtube.com/embed/DLAGR2TvQ5o&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/center&gt;
+&lt;p&gt;Songs like &quot;Karma Police&quot; and &quot;Paranoid Android&quot; is what defined &lt;a href=&quot;http://RADIOHEAD.COM&quot;&gt;Radiohead&lt;/a&gt; as a band in 90s: a perfect mix of slow, moody and downbeat rock. This album was literally the biggest rock album of late 90s, a cornerstone of Radiohead&apos;s music. What came after &quot;Ok Computer&quot; was a shift into more electronic sounding music. It is not like their music changed, they just started to use other instruments and techniques which was not to my liking.&lt;/p&gt;
+&lt;p&gt;Fast-forward 11 years to 2008 and a release of double CD album called &quot;In Rainbows&quot; which put everything back on track. The music, the melody, the acoustic guitar - everything is back, tuned to perfection, spiced up by Thom&apos;s voice. Recently I re-listened to &quot;In Rainbows&quot; and tried to get more information on songs, where they came from and what they mean.&lt;/p&gt;
+&lt;p&gt;It also turned out that one of my favourite songs from this album &quot;Last Flowers to the Hospital&quot; is an outtake from the &quot;Ok Computer&quot; sessions.&lt;/p&gt;
+&lt;p&gt;Which explained a lot especially the resemblance of two albums and matching music styles. I highly recommend &lt;a href=&quot;http://RADIOHEAD.COM&quot;&gt;Radiohead&lt;/a&gt; to anyone who is not familiar with their work, especially albums like &quot;Ok Computer&quot; and &quot;In Rainbows&quot;.&lt;/p&gt;
+&lt;center&gt;
+  &lt;iframe width=&quot;400&quot; height=&quot;300&quot; src=&quot;http://www.youtube.com/embed/y6PrVmoIC1A&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+  &lt;iframe width=&quot;400&quot; height=&quot;300&quot; src=&quot;http://www.youtube.com/embed/8nTFjVm9sTQ&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;center&gt;</content:encoded></item><item><title><![CDATA[My Music Server]]></title><description><![CDATA[Some time ago I realized that using my home desktop (Dell XPS 710) with 1000w power supply as a music server is not a perfect solution. It…]]></description><link>http://vova.org/2009-09-05-my-music-server/</link><guid isPermaLink="false">http://vova.org/2009-09-05-my-music-server/</guid><pubDate>Sat, 05 Sep 2009 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Some time ago I realized that using my home desktop (Dell XPS 710) with 1000w power supply as a music server is not a perfect solution. It was not perfect in many ways:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;it was very &lt;strong&gt;power&lt;/strong&gt; hungry: I think about 150w when idle and ~350-500w depending on the task running&lt;/li&gt;
+&lt;li&gt;it was &lt;strong&gt;noisy&lt;/strong&gt;: all those fans and multiple hard drives made a lot of noise&lt;/li&gt;
+&lt;li&gt;it was &lt;strong&gt;not secure&lt;/strong&gt;: my music collection was on the PC used by everyone so any trojan/virus could wipe out the whole collection...&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So I decided to migrate to something more reasonable while being on the budget.&lt;/p&gt;
+&lt;h2&gt;Requirements&lt;/h2&gt;
+&lt;p&gt;So how my new &quot;Home Music Server&quot; should look like? Here are some ideas I had in mind:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use ~50w of power&lt;/li&gt;
+&lt;li&gt;Be small and generate no noise (preferably no spinning parts, e.g HDD, fans, etc)&lt;/li&gt;
+&lt;li&gt;Somewhat secure&lt;/li&gt;
+&lt;li&gt;Preferably provide access to my collection through the rest of the home&lt;/li&gt;
+&lt;li&gt;Low cost (let&apos;s assume &amp;#x3C; $300)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;My System&lt;/h2&gt;
+&lt;p&gt;What did I have on my hands?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;speakers: &lt;a href=&quot;http://www.totemacoustic.com/products/columns/hawk/&quot;&gt;Totem Hawks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;amplifier: &lt;a href=&quot;http://www.psaudio.com/ps/products/detail/trio-c-100?cat=audio&quot;&gt;PS Audio Trio C100 Dual Mono&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;DAC: &lt;a href=&quot;http://www.glassjaraudio.com/product.sc?categoryId=4&amp;productId=6&quot;&gt;Alien DIY USB&lt;/a&gt; Digital to Analogue Converter&lt;/li&gt;
+&lt;li&gt;storage: about 1.3Tb of music on two 1Tb had drives&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So the rest of the system had to be determined. The missing component(s) would be a box that connects multiple hard drives on one side and has USB/SPDIF audio output on the other side. Is it a single component? We will see ;-)&lt;/p&gt;
+&lt;h2&gt;Music Collection&lt;/h2&gt;
+&lt;p&gt;Let&apos;s step back for a bit and see what music I have and how I store it. As I mentioned before I have two 1Tb drives hosting my classical and rock/jazz/other collection. I used to have thousands of CDs but I have digitized them all to lossless storage. The formats I have are about mostly &lt;a href=&quot;http://flac.sourceforge.net/&quot;&gt;FLAC&lt;/a&gt;, &lt;a href=&quot;http://www.monkeysaudio.com/&quot;&gt;Monkey Audio APE&lt;/a&gt; (I know, I know, it sucks) and 10% other formats (wv, shn, some mp3s too). Music is organized in directories sorted by author and then by album. Every (well almost every) album contains &lt;a href=&quot;http://en.wikipedia.org/wiki/Cue_sheet_(computing)&quot;&gt;.cue&lt;/a&gt; file which lists all songs in the album and songs are tagged with author/album/year/etc information.&lt;/p&gt;
+&lt;h2&gt;Player&lt;/h2&gt;
+&lt;p&gt;I am using &lt;a href=&quot;http://www.foobar2000.org/&quot;&gt;Foobar 2000&lt;/a&gt; player so far it was the best in terms of quality and  flexibility. I&apos;m very happy that it plays every possible audio format and has plugins for almost any situation. So I had big expectations that Foobar will help me connect all my components together while providing some kind of interface to control my library.&lt;/p&gt;
+&lt;h2&gt;Solution&lt;/h2&gt;
+&lt;p&gt;After googling around I bumped into two components that fit the bill (~$260 total):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;NAS: &lt;a href=&quot;http://www.dlink.com/products/?pid=666&quot;&gt;D-Link DNS 321 NAS&lt;/a&gt; ($99 after rebate)&lt;/li&gt;
+&lt;li&gt;Netbook: &lt;a href=&quot;http://eeepc.asus.com/global/product900a-spec.html&quot;&gt;ASUS Eee PC 900&lt;/a&gt; with 4Gb SSD drive ($159 on sale Buy.com)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;NAS&lt;/h4&gt;
+&lt;p&gt;The NAS (Network Attached Storage) is a very good solution for this problem. You connect ethernet cable to it and all you files are accessible from Windows, MAC or Linux (also supports ftp, iTunes, uPNP, etc). So I put one of my hard drives in it and copied all my music there. It uses about 30w of power while drives are spinning. The neat feature is that it powers down the drives when not in use (which lowers power to about 20w). It is running Linux in its NAS guts and supports 3rd party software (I don&apos;t use this feature here but it can come handy later)&lt;/p&gt;
+&lt;h4&gt;Netbook&lt;/h4&gt;
+&lt;p&gt;The core of the system is ASUS Eee PC netbook. It&apos;s small, silent and draws 18w of power while idle and 21w when in use which is perfect (see requirements). It comes with Linux pre-installed but I installed Windows XP Sp3 since Foobar music player is Windows only.&lt;/p&gt;
+&lt;h2&gt;Software&lt;/h2&gt;
+&lt;p&gt;So what did I have to install to get it going?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Windows XP&lt;/li&gt;
+&lt;li&gt;Foobar 2000 player&lt;/li&gt;
+&lt;li&gt;To control foobar remotely from any browser (including smartphones) there&apos;s a foobar plugin for that: &lt;a href=&quot;http://www.hydrogenaudio.org/forums/index.php?showtopic=62218&quot;&gt;Foobar HTTP Control&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Extras&lt;/h2&gt;
+&lt;p&gt;One of the interesting features of the system is internet radio. I really like commercial free &lt;a href=&quot;http://www.radioparadise.com/&quot;&gt;Radio Paradise&lt;/a&gt;. Foobar can play a streaming music from it too! Very convenient way to listen to new music.&lt;/p&gt;
+&lt;p&gt;The other interesting feature is running a bittorrent client on the same system.&lt;/p&gt;
+&lt;h2&gt;Next Steps&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;See how this system can fit into different home automation solutions&lt;/li&gt;
+&lt;li&gt;D-Link 321 NAS supports iTunes streaming. When I start iTunes on any computer at home I see it in the list but no music available. Need to configure it it and see if FLAC/APE files are supported&lt;/li&gt;
+&lt;li&gt;Find a low cost hardware player that can connect to NAS and strem music off it like radio&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item></channel></rss>
