@@ -51,12 +51,14 @@ const SubHeader = styled.div`
 `
 
 const ExtraLink = styled.a`
-  font-size: 0.9rem;
   float:right;
   clear:both;
   width: 50%;
   text-align: right;
   padding: 1rem 1.0875rem;
+  text-decoration: none;
+  font-size: 0.8rem;
+
 `
 
 const Header = ({ siteTitle, siteSubTitle }) => (
