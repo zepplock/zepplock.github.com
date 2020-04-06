@@ -107,7 +107,7 @@ export default ({ data }) => {
         <HeaderDate>
           {post.frontmatter.date} - {post.fields.readingTime.text}
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          {(post.frontmatter.tags || []).map(tag => <Tag><a href='http://google.com'>{tag}</a></Tag>)}
+          {(post.frontmatter.tags || []).map(tag => <Tag><a href={`/tags/${tag}`}>{tag}</a></Tag>)}
         </HeaderDate>
         <MarkdownContent dangerouslySetInnerHTML={{ __html: post.html }} />
       </Content>

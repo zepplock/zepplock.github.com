@@ -61,9 +61,7 @@ const ExtraLink = styled.a`
 
 const Header = ({ siteTitle, siteSubTitle }) => (
   <SiteHeader>
-    
     <Content>
-    
       <HomeLink to="/">{siteTitle}</HomeLink>
       <SubHeader>{siteSubTitle}</SubHeader>
     </Content>

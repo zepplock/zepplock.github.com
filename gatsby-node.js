@@ -21,10 +21,11 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   }
 }
 
-exports.createPages = ({ graphql, actions }) => {
+exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   const blogPostTemplate = path.resolve(`src/templates/blog-post.js`)
-  return graphql(`
+  const tagTemplate = path.resolve("src/templates/tags.js")
+  const result = await graphql(`
     {
       allMarkdownRemark {
         edges {
@@ -41,21 +42,41 @@ exports.createPages = ({ graphql, actions }) => {
           }
         }
       }
+      tagsGroup: allMarkdownRemark(limit: 2000) {
+        group(field: frontmatter___tags) {
+          fieldValue
+        }
+      }
     }
-  `).then(result => {
-    if (result.errors) {
-      return Promise.reject(result.errors)
-    }
-    result.data.allMarkdownRemark.edges
-      .filter(({ node }) => !node.frontmatter.draft)
-      .forEach(({ node }) => {
-        createPage({
-          path: node.frontmatter.path,
-          component: blogPostTemplate,
-          slug: node.fields.slug,
-          stags: node.fields.tags,
-          context: {},
-        })
+  `)
+
+  if (result.errors) {
+    return Promise.reject(result.errors)
+  }
+
+  result.data.allMarkdownRemark.edges
+    .filter(({ node }) => !node.frontmatter.draft)
+    .forEach(({ node }) => {
+      createPage({
+        path: node.frontmatter.path,
+        component: blogPostTemplate,
+        slug: node.fields.slug,
+        stags: node.fields.tags,
+        context: {},
       })
+    })
+
+  // Extract tag data from query
+  const tags = result.data.tagsGroup.group
+  console.log(tags)
+  // Make tag pages
+  tags.forEach(tag => {
+    createPage({
+      path: `/tags/${tag.fieldValue}/`,
+      component: tagTemplate,
+      context: {
+        tag: tag.fieldValue,
+      },
+    })
   })
 }
