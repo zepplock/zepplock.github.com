@@ -22,7 +22,7 @@ const Tags = ({ pageContext, data }) => {
   return (
     <Layout>
       <Content>
-        <h1>{tagHeader}</h1>
+        <h2>{tagHeader}</h2>
         <ul>
           {edges.map(({ node }) => {
             const { title, path } = node.frontmatter
