@@ -1,8 +1,8 @@
 ---
-title: "Digital Audio (part 1) "
+title: "Digital Audio, Myths (part 1) "
 date: "2020-03-25"
 draft: false
-path: "/articles/digital-audio-part1"
+path: "/articles/digital-audio-myths-part1"
 ---
 
 ---
@@ -30,18 +30,6 @@ Since these articles are not intended for people with a deep scientific backgrou
 
 The moral of this analogy is that packing and unpacking cotton balls into 2 different boxes does not change the weight of cotton balls. This process does not remove any, nor adds anything extra. What FLAC does really well is packing and unpacking fluffy cotton since it has a lot of air in-between cotton fibers. In fact, FLAC can do it as many times as you want, so you can do `WAV->FLAC->WAV` encoding/decoding without altering audio data. This type of codec is called **Lossless**.
 
-### The Sources
-
-Going forward, let's identify a few sound sources of musical content.
-
-#### Source A
-
-The first one (we will call it `source A`) is a single track from a good old-fashioned Audio CD in 16bit 44.1kHz PCM (we will call it `16/44`). This is a well-recorded piece of music from, let's say, the 70s. Originally recorded to an analog master tape and later digitized for CD distribution. We don't really care how or when digital conversion happened.
-
-#### Source B
-
-The next one (we will call it `source B`) is a state of the art modern recording, recorded directly to digital media in 24bit and 96kHz (`24/96`).
-
 ### Digital Audio Myths
 
 #### Myth #1: coax vs optical cables
@@ -65,13 +53,13 @@ This one is tricky because so many people go to (for example, Tidal) and find mu
 - One audio player is incorrectly configured: this is pretty common, actually. Some audio players do a better job by ensuring digital data is reproduced bit-perfect. It greatly depends on a computer's operating system, portable player and DAC drivers. There are good players on every platform, but there are bad ones too.
 - Streaming providers cheat: it was shown that even a 1db increase in loudness can be perceived by the human brain as better. So hypothetically they could take `16/44` source, make it a bit louder, convert to `24/96` and sell as 'HiRez'.
 
-If the music source was identical in each and every streaming service (let's take our `source B`) then they would all sound identical. Neither internet connection, type of cable to your house, USB cable, DAC, player nor any other path of a digital chain can change the sound.
+If the music source was identical in each and every streaming service then they would all sound identical. Neither internet connection, type of cable to your house, USB cable, DAC, player nor any other path of a digital chain can change the sound.
 
-The moral of Misconception #3 is that you can't compare streaming services by individual song quality. Consider other parameters as well. You should make your decision based on price, platform availability (PC, Mac, Android, iOS) and catalog size first and foremost.
+The moral of Myth #2 is that you can't compare streaming services by individual song quality. Consider other parameters as well. You should make your decision based on price, platform availability (PC, Mac, Android, iOS) and catalog size first and foremost.
 
 #### Myth #3: HiRez audio always sounds better
 
-Let's imagine that some streaming service or online store decides to convert `source A` from `16/44` to `24/96`. They are calling it 'HiRez' music and selling it for more than a regular `16/44`. So what exactly happens? Let's do another analogy:
+Let's imagine that some streaming service or online store decides to convert an audio track from `16/44` to `24/96`. They are calling it 'HiRez' music and selling it for more than a regular `16/44`. So what exactly happens? Let's do another analogy:
 
     We have a shoebox full of cotton balls.
     They took it and put it into ~3x larger container - say a 5 lb bucket.
@@ -79,6 +67,9 @@ Let's imagine that some streaming service or online store decides to convert `so
 
 We have the same audio, same quality, same content but it takes longer to download and stream. More importantly, it sounds the same too!
 
-## Further reading on this subject
+### Further reading on this subject
 
 - [Audio bit depth on Wikipedia](https://en.wikipedia.org/wiki/Audio_bit_depth)
+
+---
+continue reading, to [part 2](/articles/digital-audio-error-correction-part2)
