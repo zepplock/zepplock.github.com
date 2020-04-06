@@ -3,6 +3,7 @@ title: "Digital Audio, Error Correction (part 2) "
 date: "2020-04-05"
 draft: false
 path: "/articles/digital-audio-error-correction-part2"
+tags: ["audio", "Digital Audio"]
 ---
 
 ### Analog audio degradation

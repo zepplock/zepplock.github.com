@@ -3,6 +3,7 @@ title: "Digital Audio, Myths (part 1) "
 date: "2020-03-25"
 draft: false
 path: "/articles/digital-audio-myths-part1"
+tags: ["audio", "Digital Audio"]
 ---
 
 ---
