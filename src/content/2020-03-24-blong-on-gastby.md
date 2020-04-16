@@ -6,10 +6,8 @@ path: "/articles/blog-on-gatsby"
 tags: ["blog", "announcements"]
 ---
 
----
 > "The car is on fire and there's nobody at the wheel"
 > -- [Godspeed You! Black Emperor](https://genius.com/artists/Godspeed-you-black-emperor)
----
 
 A very fitting quote for being stuck at home.
 

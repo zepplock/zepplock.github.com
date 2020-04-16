@@ -430,6 +430,10 @@ blockquote {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
+  position: relative;
+  padding-left: 1em;
+  border-left: 0.2em solid ;
+  font-style: italic;
 }
 form {
   margin-left: 0;
