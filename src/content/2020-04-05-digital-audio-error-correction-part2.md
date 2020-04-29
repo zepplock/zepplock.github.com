@@ -63,5 +63,9 @@ The modern error correction techniques deal with errors very well up until a bre
 
 Unless a bucket gets completely drained, or a sponge gets really clogged - there's no audio degradation since we have absolutely identical audio data. If audio data gets corrupted in any way along the digital path - it gets error rejected or error corrected by [Ethernet](https://en.wikipedia.org/wiki/Ethernet), [TCP/IP](https://en.wikipedia.org/wiki/Internet_protocol_suite) and other network protocols.
 
+#### Addendum 1 ([by LightninBoy](https://www.audiosciencereview.com/forum/index.php?threads/digital-audio-articles-i-wrote.12615/#post-378324))
+
+> Its important to know that when errors do occur in audio data transmission (say because of a faulty USB cable for example), the resulting audio distortions are not subtle. Those typically manifest as pops and static, skips, etc. Any "veils", "air", or "pace, rhythm and timing (PRAT)" is embedded in the data itself, so as long as the technical components are storing, retrieving, and transmitting the data without error (which almost all do all the time), they are delivering all the possible air, PRAT, bass impact, or any other audiophile buzzwords.
+
 ---
 back to [part 1](/articles/digital-audio-myths-part1)

@@ -29,6 +29,17 @@ Since these articles are not intended for people with a deep scientific backgrou
 
 The moral of this analogy is that packing and unpacking cotton balls into 2 different boxes does not change the weight of cotton balls. This process does not remove any, nor adds anything extra. What FLAC does really well is packing and unpacking fluffy cotton since it has a lot of air in-between cotton fibers. In fact, FLAC can do it as many times as you want, so you can do `WAV->FLAC->WAV` encoding/decoding without altering audio data. This type of codec is called **Lossless**.
 
+### What is lossy? Analogy #2
+
+To highlight advantages of a lossless (without loss) compression, let's look into a lossy (with data losses) compression analogy:
+
+> Same CD data, see Analogy #1 above ...
+> Now let's put it into a tiny matchbox. Cotton balls do not fit!
+> So lossless codec will pull some cotton out and throw it away.
+> In fact it will throw away enough to make it fit (into 128kbps container)
+
+The moral of second analogy is that packing and unpacking cotton balls into a tiny matchbox will result in a loss of data (cotton). Once thrown away it can not be fully recovered. This type of codec is called **Lossy**.
+
 ### Digital Audio Myths
 
 #### Myth #1: coax vs optical cables
@@ -61,7 +72,7 @@ The moral of Myth #2 is that you can't compare streaming services by individual 
 Let's imagine that some streaming service or online store decides to convert an audio track from `16/44` to `24/96`. They are calling it 'HiRez' music and selling it for more than a regular `16/44`. So what exactly happens? Let's do another analogy:
 
 > We have a shoebox full of cotton balls.
-> They took it and put it into ~3x larger container - say a 5 lb bucket.
+> They took it and put it into ~3x larger container - say a 5lb bucket.
 > Same amount of cotton, in a different container.
 
 We have the same audio, same quality, same content but it takes longer to download and stream. More importantly, it sounds the same too!
