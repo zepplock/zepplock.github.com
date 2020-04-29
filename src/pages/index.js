@@ -40,20 +40,20 @@ const ReadingTime = styled.h5`
   color: #606060;
 `
 
-const Tag = styled.span`
-  a {
-    border-style: solid;
-    border-width: thin;
-    border-color: rgba(2, 195, 154, 0.8);
-    color: #777;
-    padding: 1px 6px;
-    margin: 2px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 8px;
-    font-size: 0.9rem;
-}
-`
+// const Tag = styled.span`
+//   a {
+//     border-style: solid;
+//     border-width: thin;
+//     border-color: rgba(2, 195, 154, 0.8);
+//     color: #777;
+//     padding: 1px 6px;
+//     margin: 2px;
+//     text-align: center;
+//     text-decoration: none;
+//     border-radius: 8px;
+//     font-size: 0.9rem;
+// }
+// `
 
 const IndexPage = ({ data }) => {
   return (
@@ -81,7 +81,7 @@ const IndexPage = ({ data }) => {
                   <ArticleDate>{node.frontmatter.date}</ArticleDate>
                   <ReadingTime> - {node.fields.readingTime.text}</ReadingTime>
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  {(node.frontmatter.tags || []).map(tag => <Tag><a href='http://google.com'>{tag}</a></Tag>)}
+                  {/* {(node.frontmatter.tags || []).map(tag => <Tag><a href='http://vova.org/tags/'>{tag}</a></Tag>)} */}
                 </div>
                 <p>{node.excerpt}</p>
               </Link>
