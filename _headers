@@ -50,24 +50,6 @@
   Link: </component---src-templates-blog-post-js-ef624b0530a7eaa9c8c2.js>; rel=preload; as=script
   Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
   Link: </page-data/articles/ok-computer-lives/page-data.json>; rel=preload; as=fetch; crossorigin
-/articles/blog-on-gatsby
-  Link: </webpack-runtime-9b3697caf5b952f036c0.js>; rel=preload; as=script
-  Link: </styles-36681512479a843831b0.js>; rel=preload; as=script
-  Link: </framework-1cbcc4f69858806ac5db.js>; rel=preload; as=script
-  Link: </app-f601143c477d01a6af9c.js>; rel=preload; as=script
-  Link: </428cc97b99dda93b6f894a0194db3c3a0ab8bbd5-dc06c6e1e71d74ce7492.js>; rel=preload; as=script
-  Link: </component---src-templates-blog-post-js-ef624b0530a7eaa9c8c2.js>; rel=preload; as=script
-  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </page-data/articles/blog-on-gatsby/page-data.json>; rel=preload; as=fetch; crossorigin
-/articles/digital-audio-myths-part1
-  Link: </webpack-runtime-9b3697caf5b952f036c0.js>; rel=preload; as=script
-  Link: </styles-36681512479a843831b0.js>; rel=preload; as=script
-  Link: </framework-1cbcc4f69858806ac5db.js>; rel=preload; as=script
-  Link: </app-f601143c477d01a6af9c.js>; rel=preload; as=script
-  Link: </428cc97b99dda93b6f894a0194db3c3a0ab8bbd5-dc06c6e1e71d74ce7492.js>; rel=preload; as=script
-  Link: </component---src-templates-blog-post-js-ef624b0530a7eaa9c8c2.js>; rel=preload; as=script
-  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </page-data/articles/digital-audio-myths-part1/page-data.json>; rel=preload; as=fetch; crossorigin
 /articles/digital-audio-error-correction-part2
   Link: </webpack-runtime-9b3697caf5b952f036c0.js>; rel=preload; as=script
   Link: </styles-36681512479a843831b0.js>; rel=preload; as=script
@@ -77,6 +59,24 @@
   Link: </component---src-templates-blog-post-js-ef624b0530a7eaa9c8c2.js>; rel=preload; as=script
   Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
   Link: </page-data/articles/digital-audio-error-correction-part2/page-data.json>; rel=preload; as=fetch; crossorigin
+/articles/digital-audio-myths-part1
+  Link: </webpack-runtime-9b3697caf5b952f036c0.js>; rel=preload; as=script
+  Link: </styles-36681512479a843831b0.js>; rel=preload; as=script
+  Link: </framework-1cbcc4f69858806ac5db.js>; rel=preload; as=script
+  Link: </app-f601143c477d01a6af9c.js>; rel=preload; as=script
+  Link: </428cc97b99dda93b6f894a0194db3c3a0ab8bbd5-dc06c6e1e71d74ce7492.js>; rel=preload; as=script
+  Link: </component---src-templates-blog-post-js-ef624b0530a7eaa9c8c2.js>; rel=preload; as=script
+  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </page-data/articles/digital-audio-myths-part1/page-data.json>; rel=preload; as=fetch; crossorigin
+/articles/blog-on-gatsby
+  Link: </webpack-runtime-9b3697caf5b952f036c0.js>; rel=preload; as=script
+  Link: </styles-36681512479a843831b0.js>; rel=preload; as=script
+  Link: </framework-1cbcc4f69858806ac5db.js>; rel=preload; as=script
+  Link: </app-f601143c477d01a6af9c.js>; rel=preload; as=script
+  Link: </428cc97b99dda93b6f894a0194db3c3a0ab8bbd5-dc06c6e1e71d74ce7492.js>; rel=preload; as=script
+  Link: </component---src-templates-blog-post-js-ef624b0530a7eaa9c8c2.js>; rel=preload; as=script
+  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </page-data/articles/blog-on-gatsby/page-data.json>; rel=preload; as=fetch; crossorigin
 /tags/Digital Audio/
   Link: </webpack-runtime-9b3697caf5b952f036c0.js>; rel=preload; as=script
   Link: </styles-36681512479a843831b0.js>; rel=preload; as=script
