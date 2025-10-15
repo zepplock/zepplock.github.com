@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vladimir Reshetnikov</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #0a0a0a;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+        
+        .presentation {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .slide {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 60px 40px;
+            margin-bottom: 40px;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .slide::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e50914, #b20710);
+        }
+        
+        .slide-number {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            font-size: 14px;
+            color: #666;
+        }
+        
+        h1 {
+            font-size: 64px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        h2 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 40px;
+            color: #e50914;
+        }
+        
+        h3 {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #e50914;
+        }
+        
+        .subtitle {
+            font-size: 24px;
+            color: #999;
+            margin-bottom: 40px;
+        }
+        
+        .contact {
+            font-size: 18px;
+            color: #666;
+            margin-top: 30px;
+        }
+        
+        .timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .timeline-item {
+            display: flex;
+            gap: 30px;
+            padding: 25px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            border-left: 4px solid #e50914;
+        }
+        
+        .timeline-year {
+            font-size: 24px;
+            font-weight: 700;
+            color: #e50914;
+            min-width: 120px;
+        }
+        
+        .timeline-content h4 {
+            font-size: 22px;
+            margin-bottom: 8px;
+        }
+        
+        .timeline-content p {
+            font-size: 16px;
+            color: #999;
+            line-height: 1.6;
+        }
+        
+        .metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .metric-card {
+            padding: 30px;
+            background: rgba(229, 9, 20, 0.1);
+            border-radius: 12px;
+            border: 1px solid rgba(229, 9, 20, 0.3);
+        }
+        
+        .metric-value {
+            font-size: 48px;
+            font-weight: 700;
+            color: #e50914;
+            margin-bottom: 10px;
+        }
+        
+        .metric-label {
+            font-size: 16px;
+            color: #ccc;
+        }
+        
+        .content-section {
+            margin-top: 30px;
+        }
+        
+        .content-section p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #ccc;
+            margin-bottom: 20px;
+        }
+        
+        .highlight-box {
+            padding: 30px;
+            background: rgba(229, 9, 20, 0.1);
+            border-radius: 12px;
+            border-left: 4px solid #e50914;
+            margin: 20px 0;
+        }
+        
+        .highlight-box h4 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #e50914;
+        }
+        
+        .highlight-box ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .highlight-box li {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #ccc;
+            margin-bottom: 12px;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .highlight-box li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: #e50914;
+            font-weight: bold;
+        }
+        
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .value-item {
+            padding: 25px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+        }
+        
+        .value-item h4 {
+            font-size: 20px;
+            color: #e50914;
+            margin-bottom: 10px;
+        }
+        
+        .value-item p {
+            font-size: 15px;
+            color: #999;
+            line-height: 1.6;
+        }
+        
+        .hobbies {
+            display: flex;
+            gap: 40px;
+            margin-top: 40px;
+        }
+        
+        .hobby-card {
+            flex: 1;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            text-align: center;
+        }
+        
+        .hobby-icon {
+            font-size: 72px;
+            margin-bottom: 20px;
+        }
+        
+        .hobby-card h4 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        
+        .hobby-card p {
+            font-size: 16px;
+            color: #999;
+            line-height: 1.6;
+        }
+        
+        @media (max-width: 768px) {
+            h1 { font-size: 40px; }
+            h2 { font-size: 32px; }
+            .timeline-item { flex-direction: column; }
+            .hobbies { flex-direction: column; }
+            .values-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="presentation">
+        <!-- Slide 1: Title -->
+        <div class="slide">
+            <div class="slide-number">1/5</div>
+            <h1>Vladimir Reshetnikov</h1>
+            <p class="subtitle">Candidate</p>
+            <div class="contact">
+                zepplock@vova.org | (408) 520-0654
+            </div>
+        </div>
+
+        <!-- Slide 2: Career Journey -->
+        <div class="slide">
+            <div class="slide-number">2/5</div>
+            <h2>The Journey: From Code to Leadership</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">2002-2007</div>
+                    <div class="timeline-content">
+                        <h4>Spirent Communications - Lead Senior Engineer</h4>
+                        <p>High-performance internet protocols.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">2007-2012</div>
+                    <div class="timeline-content">
+                        <h4>Alcatel-Lucent - Architect</h4>
+                        <p>Enterprise-wide API standardization. Plan and deploy large-scale systems for AT&T.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">2012-2015</div>
+                    <div class="timeline-content">
+                        <h4>Load Dynamix - Tech Lead & Manager</h4>
+                        <p>Build a new broduct and scale engineering org to 10-15 engineers. First commercial sale within 6 months. Investment D round.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">2015-2017</div>
+                    <div class="timeline-content">
+                        <h4>ShoCard - Founding Engineer</h4>
+                        <p>0-1 startup: lots of crypto, custom blockchain, complete AWS infrastructure, three patents.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">2017-2025</div>
+                    <div class="timeline-content">
+                        <h4>Netflix - Senior Software Engineer</h4>
+                        <p>AI automation pioneer. Scaled systems from thousands to millions of runs per day.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Technical Leadership & AI Impact -->
+        <div class="slide">
+            <div class="slide-number">3/5</div>
+            <h2>Technical Leadership & AI Innovation</h2>
+            
+            <div class="metrics">
+                <div class="metric-card">
+                    <div class="metric-value">10x</div>
+                    <div class="metric-label">Reduction in manual triage time via AI automation</div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-value">40x</div>
+                    <div class="metric-label">Infrastructure expansion (50 → 2,000+ devices)</div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-value">8 → 1</div>
+                    <div class="metric-label">Consolidated tools into centralized platform</div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-value">Millions</div>
+                    <div class="metric-label">Daily test runs (from thousands)</div>
+                </div>
+            </div>
+            
+            <div class="highlight-box">
+                <h4>AI/LLM Implementation at Scale (Netflix)</h4>
+                <ul>
+                    <li>Pioneered agentic AI using LLMs and embeddings for test error correlation</li>
+                    <li>Automated troubleshooting across client and server teams</li>
+                    <li>Improved developer productivity across multiple product teams</li>
+                    <li>Mentorships</li>
+                </ul>
+            </div>
+            
+            <div class="highlight-box">
+                <h4>0-1 Building Expertise (ShoCard)</h4>
+                <ul>
+                    <li>Designed custom blockchain with Bitcoin/Ethereum synchronization</li>
+                    <li>Built complete AWS infrastructure from ground up</li>
+                    <li>Authored three patents in digital identity and crypto</li>
+                    <li>RESTful APIs, Developer Portal, browser plugins - full stack ownership</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 4: Building & Scaling Teams -->
+        <div class="slide">
+            <div class="slide-number">4/5</div>
+            <h2>Building High-Performance Teams</h2>
+            
+            <div class="content-section">
+                <h3>Team Building Philosophy</h3>
+                <p>My approach to engineering leadership centers on empowering exceptional individuals to do their best work. I've built and scaled teams from 0 to 15 engineers, combining strategic hiring with intentional culture-building.</p>
+            </div>
+            
+            <div class="highlight-box">
+                <h4>Load Dynamix: Building from Scratch</h4>
+                <ul>
+                    <li>Recruited and built high-performing org of 10-15 engineers (developers & QA)</li>
+                    <li>Managed distributed team (local and remote) before it was common</li>
+                    <li>Architected scalable SaaS platform for enterprise customers</li>
+                    <li>Achieved first commercial sale within 6 months of conception</li>
+                </ul>
+            </div>
+            
+            <div class="highlight-box">
+                <h4>Mentorship & Team Growth</h4>
+                <ul>
+                    <li>Mentored engineers L3-L5 on quality, best practices, and technical design</li>
+                    <li>Contributed to several engineer promotions through focused development</li>
+                    <li>Elevated team capabilities across client and server engineering groups</li>
+                    <li>Created culture of continuous learning and technical excellence</li>
+                </ul>
+            </div>
+            
+            <div class="values-grid">
+                <div class="value-item">
+                    <h4>Freedom & Responsibility</h4>
+                    <p>Trust engineers with context and autonomy to make decisions</p>
+                </div>
+                <div class="value-item">
+                    <h4>High Performance</h4>
+                    <p>Build teams of exceptional talent who elevate each other</p>
+                </div>
+                <div class="value-item">
+                    <h4>Context Not Control</h4>
+                    <p>Lead with strategy and vision, not micromanagement</p>
+                </div>
+                <div class="value-item">
+                    <h4>Innovation</h4>
+                    <p>Encourage experimentation and bold technical bets</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: Personal -->
+        <div class="slide">
+            <div class="slide-number">5/5</div>
+            <h2>Beyond the Keyboard</h2>
+            
+            <div class="hobbies">
+                <div class="hobby-card">
+                    <div class="hobby-icon">🚵</div>
+                    <h4>Mountain Biking</h4>
+                    <p>There's something about navigating challenging trails that mirrors engineering leadership - reading the terrain ahead, making split-second decisions, and knowing when to push hard versus when to take the safe line. Plus, Bay Area trails are incredible.</p>
+                </div>
+                
+                <div class="hobby-card">
+                    <div class="hobby-icon">🍞</div>
+                    <h4>Sourdough Baking</h4>
+                    <p>Sourdough teaches patience, iteration, and the importance of process. Every loaf is an experiment - adjusting hydration, timing, temperature. It's deeply satisfying to build something from scratch, much like founding-stage engineering.</p>
+                </div>
+            </div>
+            
+            <div class="content-section" style="margin-top: 60px;">
+                <h3>Why This Role?</h3>
+                <p>Building software 0-1 with an AI focus in hardware manufacturing is the perfect intersection of my experience: I've built companies from the ground up, pioneered AI/LLM automation at scale, and I thrive in the early-stage ambiguity where you're defining both the product and the team culture simultaneously.</p>
+                <p style="margin-top: 20px;">I'm energized by the challenge of bringing software excellence to hardware-first organizations and building teams that can move fast while maintaining the rigor required in this space.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
